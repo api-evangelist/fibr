@@ -1,8 +1,33 @@
 aid: fibr
 name: Fibr
-description: Fibr is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Fibr AI is an Agentic Web Experience Platform that turns static URLs into
+  intelligent, adaptive landing pages that sense visitor intent and reshape
+  themselves in real time using AI agents with human oversight. Its core product,
+  Fibr Web Pilot, combines no-code A/B testing, conversion-rate optimization (CRO),
+  and personalization — including ad-to-landing-page matching, audience and
+  LLM-visitor personalization, bulk page creation, and AI-driven experimentation —
+  for enterprises, agencies, and growth marketers. The platform integrates with
+  Google Ads, Meta Ads, GA4, CDPs, and major CMS tools, and also ships a large
+  library of free AI marketing tools (headline, hook, CTA, caption, and copy
+  generators, a CRO audit, a landing-page analyzer, and an LLMs.txt generator).
+  Founded in 2022-2023 by Ankur "AJ" Goyal and Pritam Roy and backed by Accel,
+  Fibr is offered through Starter, Agency, and Enterprise pricing tiers. Fibr does
+  not currently publish a public developer API or OpenAPI; this profile captures
+  its identity, developer-adjacent surface, and security/compliance posture.
 url: https://raw.githubusercontent.com/api-evangelist/fibr/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://framerusercontent.com/assets/XfCvovYMluHkUPTs7owlGe1ohNQ.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,9 +36,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Conversion Rate Optimization
+- Personalization
+- Landing Pages
+- A/B Testing
+- Experimentation
+- Marketing
+- Artificial Intelligence
+- Agentic Web
+- Web Experience
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +57,34 @@ maintainers:
 common:
 - type: Website
   url: https://fibr.ai/
+- type: Documentation
+  url: https://support.fibr.ai/
+- type: Pricing
+  url: https://fibr.ai/pricing
+- type: Blog
+  url: https://fibr.ai/blog
+- type: SignUp
+  url: https://fibr.ai/book-a-demo
+- type: TermsOfService
+  url: https://fibr.ai/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://fibr.ai/privacy-policy
+- type: Support
+  url: https://support.fibr.ai/
+- type: GitHubOrganization
+  url: https://github.com/getfibr
+- type: LLMsTxt
+  url: llms/fibr-llms.txt
+- type: TrustCenter
+  url: https://trust.fibr.ai/
+- type: Conformance
+  url: conformance/fibr-conformance.yml
+- type: Compliance
+  url: https://trust.fibr.ai/
+- type: DomainSecurity
+  url: security/fibr-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

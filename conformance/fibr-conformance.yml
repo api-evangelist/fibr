@@ -1,0 +1,21 @@
+generated: '2026-07-19'
+method: searched
+source: https://fibr.ai/llms.txt
+notes: >-
+  Fibr AI publishes an enterprise-compliance posture on its site and trust
+  center. Fibr is a marketing / conversion-rate-optimization SaaS with no public
+  developer API or OpenAPI, so cross-cutting API standards (OAuth2/OIDC, RFC 9457,
+  JSON:API, FHIR, SCIM, etc.) are not applicable and are not asserted here.
+standards:
+  - id: soc2
+    conforms: true
+    evidence: 'Fibr states SOC 2 enterprise compliance (fibr.ai/llms.txt; trust.fibr.ai)'
+  - id: iso-27001
+    conforms: true
+    evidence: 'Fibr states ISO 27001 enterprise compliance (fibr.ai/llms.txt; trust.fibr.ai)'
+  - id: gdpr
+    conforms: true
+    evidence: 'Fibr states GDPR compliance (fibr.ai/llms.txt)'
+  - id: ccpa
+    conforms: true
+    evidence: 'Fibr states CCPA compliance (fibr.ai/llms.txt)'
