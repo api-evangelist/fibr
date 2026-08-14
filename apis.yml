@@ -17,16 +17,24 @@ description: >-
   its identity, developer-adjacent surface, and security/compliance posture.
 url: https://raw.githubusercontent.com/api-evangelist/fibr/refs/heads/main/apis.yml
 accessModel:
-  pricing: unknown
-  onboarding: unknown
+  pricing: enterprise
+  onboarding: approval
   trial: false
   try_now: false
   public: false
-  label: Unknown
-  confidence: low
-  source: []
-  generated: '2026-07-22'
-  method: derived
+  label: Contact sales
+  confidence: high
+  source:
+  - https://fibr.ai/pricing
+  - https://fibr.ai/book-a-demo
+  generated: '2026-08-13'
+  method: searched
+  note: >-
+    All three published tiers (Starter, Agency, Enterprise) terminate in a sales
+    motion — Talk to Sales, Book a Demo or Explore More. No price, currency or
+    billing period is published on any tier and there is no self-serve signup. The
+    free AI marketing tools at fibr.ai/tools are no-login lead-generation utilities,
+    not a plan tier.
 image: https://framerusercontent.com/assets/XfCvovYMluHkUPTs7owlGe1ohNQ.png
 x-type: company
 x-source: vc-portfolio
@@ -36,7 +44,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-08-13'
 tags:
 - Company
 - Conversion Rate Optimization
@@ -72,9 +80,38 @@ common:
 - type: Support
   url: https://support.fibr.ai/
 - type: GitHubOrganization
-  url: https://github.com/getfibr
+  url: https://github.com/getfibr-co
+  name: Fibr Inc
+  note: >-
+    Verified first-party: the org is named "Fibr Inc" and its blog field is
+    https://www.fibr.ai/. It holds 1 public repo (getfibr-co.github.io, an empty
+    GitHub Pages placeholder) and publishes no code, specs or SDKs. The older
+    github.com/getfibr org holds 0 public repos and carries no attribution linking
+    it to this company.
+- type: GettingStarted
+  url: https://support.fibr.ai/get-started-with-fibr-ai
+- type: Login
+  url: https://app.getfibr.co
+- type: ChangeLog
+  url: https://support.fibr.ai/product-change-logs
+- type: ChangeLog
+  name: Fibr product changelog (structured)
+  url: changelog/fibr-changelog.yml
+- type: Components
+  url: components/fibr-components.yml
+- type: Plans
+  url: plans/fibr-plans-pricing.yml
+- type: Lifecycle
+  url: lifecycle/fibr-lifecycle.yml
+- type: Integrations
+  url: integrations/_index.yml
+- type: ContentSignal
+  url: well-known/fibr-content-signals.yml
 - type: LLMsTxt
   url: llms/fibr-llms.txt
+- type: LLMsTxt
+  name: Fibr documentation llms.txt
+  url: llms/fibr-support-llms.txt
 - type: TrustCenter
   url: https://trust.fibr.ai/
 - type: Conformance
@@ -84,7 +121,33 @@ common:
 - type: DomainSecurity
   url: security/fibr-domain-security.yml
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
+  date: '2026-08-13'
+  status: minimal
+  artifacts_added: 9
   pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+  note: >-
+    Full contract discovery re-run (STEP 0b) across six Fibr-controlled hosts plus
+    the getfibr.co runtime domain — no OpenAPI, no GraphQL, no MCP, no agent card,
+    no /.well-known/ document of any kind. Real published surfaces were harvested
+    instead: dated product changelog, Content-Signal robots directives, the Fibr
+    Script component, pricing tiers, documented integrations and the docs llms.txt.
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Fibr ships its platform only as an end-user product — the entire developer
+    surface is one per-workspace JavaScript tag retrieved from the authenticated
+    dashboard, and the GitBook documentation index (support.fibr.ai/llms.txt, 200)
+    lists no API, webhook or SDK section at all.
+  evidence:
+  - url: https://support.fibr.ai/llms.txt
+    status: 200
+  - url: https://fibr.ai/openapi.json
+    status: 404
+  - url: https://app.getfibr.co/openapi.json
+    status: 404
+  - url: https://fibr.ai/.well-known/agent-card.json
+    status: 404
+  - url: https://api.github.com/orgs/getfibr-co/repos
+    status: 200
+  checked: '2026-08-13'
