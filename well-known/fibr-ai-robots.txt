@@ -1,0 +1,6 @@
+# AI-facing artifacts for fibr.ai
+User-agent: *
+Disallow:
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
+Sitemap: https://ai.fibr.ai/sitemap-ai.xml

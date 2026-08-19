@@ -1,0 +1,73 @@
+generated: '2026-08-13'
+method: probed
+source: live GET of the /.well-known/ discovery surface on every Fibr-controlled host
+notes: >-
+  Every /.well-known/ path was probed on all five reachable Fibr hosts and every one
+  of them returned 404. This file records a measured ABSENCE — no WellKnown or
+  SecurityTxt pointer is wired in apis.yml, because no document was served. The
+  marketing hosts (fibr.ai, www.fibr.ai, getfibr.co) are Framer-published and answer
+  404 with a 10-byte "Not found" body; support.fibr.ai (GitBook) and app.getfibr.co
+  (Next.js) answer 404 with their own HTML shells. None of these is a document.
+  Fibr DOES serve machine-readable AI-facing artifacts, just not under /.well-known/ —
+  see well-known/fibr-content-signals.yml (robots.txt Content-Signal directives) and
+  llms/ (llms.txt on three hosts).
+hosts:
+  - host: https://fibr.ai
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/oauth-protected-resource, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /.well-known/agent-card.json, status: 404}
+      - {path: /.well-known/agent.json, status: 404}
+  - host: https://ai.fibr.ai
+    note: AI-facing structured knowledge-base host (llms.txt + sitemap-ai.xml)
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/oauth-protected-resource, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /.well-known/agent-card.json, status: 404}
+      - {path: /.well-known/agent.json, status: 404}
+  - host: https://support.fibr.ai
+    note: GitBook documentation host; 404 body is an HTML shell, not a document
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/oauth-protected-resource, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /.well-known/agent-card.json, status: 404}
+      - {path: /.well-known/agent.json, status: 404}
+  - host: https://app.getfibr.co
+    note: the Fibr product application (login); runtime host for the Fibr Script
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/oauth-protected-resource, status: 404}
+      - {path: /.well-known/agent-card.json, status: 404}
+      - {path: /.well-known/agent.json, status: 404}
+  - host: https://getfibr.co
+    note: alternate marketing domain, serves the same Framer site as fibr.ai
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/oauth-protected-resource, status: 404}
+      - {path: /.well-known/agent-card.json, status: 404}
+      - {path: /.well-known/agent.json, status: 404}
+  - host: https://trust.fibr.ai
+    note: Trust Vault trust center; SPA answers 404 with an HTML shell
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/agent-card.json, status: 404}
+      - {path: /.well-known/agent.json, status: 404}
+summary:
+  hosts_probed: 6
+  documents_found: 0
+  security_txt: false
+  agent_card: false
+  api_catalog: false

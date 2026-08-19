@@ -1,0 +1,100 @@
+generated: '2026-08-13'
+method: searched
+source: https://support.fibr.ai/get-started-with-fibr-ai/fibr-script
+notes: >-
+  Fibr ships no server-side SDK and no package on any public registry (npm, PyPI,
+  RubyGems and crates.io were all searched and returned nothing first-party). Its
+  entire developer-facing surface is ONE client-side artifact: the Fibr Script, a
+  tag pasted into the <head> of the customer's site, which identifies the visitor,
+  selects the matching experiment/personalization variant and renders it client-side
+  during page render. That makes this the correct artifact for Fibr rather than
+  packages/ — there is nothing to install, only something to embed.
+  IMPORTANT CAVEAT ON DISTRIBUTION: the snippet itself is NOT published. It is
+  generated per workspace and is only visible after signing in to the Fibr dashboard
+  (Settings -> Setup), so neither its URL nor its version can be recorded here. What
+  IS published is the CSP allowlist, which names the runtime host.
+distribution:
+  public_snippet_url: null
+  public_snippet_note: >-
+    Per-workspace snippet, retrieved from the authenticated dashboard at
+    https://app.getfibr.co (Settings -> Setup). No public, versioned, pinnable URL is
+    documented, so a consumer cannot tell which build they are loading.
+  runtime_host: 'https://*.getfibr.co'
+  version: null
+  versioning_note: >-
+    Unpinned. The docs never name a version or an integrity hash for the loader.
+components:
+  - family: Fibr Script
+    name: Fibr Script (loader tag)
+    kind: script-tag
+    docs: https://support.fibr.ai/get-started-with-fibr-ai/fibr-script
+    placement: >-
+      Documented as first element inside <head>, above analytics tags and tracking
+      pixels, so it initializes before other third-party scripts.
+    capabilities:
+      - visitor identification (source ad, audience segment, new vs returning, location)
+      - variant selection against active experiments and personalization campaigns
+      - client-side delivery during page render (anti-flicker claim)
+      - click tracking and page tracking for success metrics
+    variants:
+      - name: standard loader
+        docs: https://support.fibr.ai/get-started-with-fibr-ai/fibr-script/configure-fibr-script-to-your-website
+      - name: anti-flicker loader
+        docs: https://support.fibr.ai/get-started-with-fibr-ai/fibr-script/configure-fibr-script-to-your-website
+        note: >-
+          Alternate build offered in the dashboard Setup section when the standard
+          loader produces a visible flash of original content.
+    install_methods:
+      - method: direct HTML
+        target: any website
+        docs: https://support.fibr.ai/get-started-with-fibr-ai/fibr-script/configure-fibr-script-to-your-website
+      - method: Shopify app
+        target: Shopify storefront
+        docs: https://support.fibr.ai/get-started-with-fibr-ai/fibr-script/configuring-the-fibr-script-for-your-shopify-store
+        note: >-
+          Fibr requests permission to read store data and inject the optimization
+          script; docs state it does not access customer payment information or
+          modify products.
+      - method: Google Tag Manager
+        target: any website
+        docs: https://support.fibr.ai/get-started-with-fibr-ai/fibr-script/impact-of-fibr-script-using-gtm
+        supported: true
+        recommended: false
+        note: >-
+          Documented but explicitly discouraged — the docs warn GTM adds delay that
+          can cause flickering.
+    validation:
+      flow: Fibr Dashboard -> Settings -> Setup -> Validate -> Check now
+      docs: https://support.fibr.ai/get-started-with-fibr-ai/fibr-script/configure-fibr-script-to-your-website
+    scope_rules:
+      - Installing on an apex domain applies to its subdomains automatically.
+      - Every domain and subdomain must also be added to the workspace allowlist.
+    performance_docs:
+      - https://support.fibr.ai/get-started-with-fibr-ai/fibr-script/impact-of-fibr-script-on-web-performance
+      - https://support.fibr.ai/get-started-with-fibr-ai/fibr-script/impact-of-fibr-script-using-gtm
+    performance_note: >-
+      Fibr publishes measured FCP, LCP and Total Blocking Time impact for both the
+      direct and the GTM installation paths.
+csp_requirements:
+  docs: https://support.fibr.ai/get-started-with-fibr-ai/compliance-and-permissions/whitelist-fibr-in-your-content-security-policy-csp
+  directives:
+    - {directive: script-src, host: 'https://*.getfibr.co'}
+    - {directive: connect-src, host: 'https://*.getfibr.co'}
+    - {directive: img-src, host: 'https://*.getfibr.co'}
+    - {directive: style-src, host: 'https://*.getfibr.co'}
+  note: >-
+    The published CSP allowlist is the only place Fibr names its runtime host in
+    public. It is a wildcard (*.getfibr.co), so the exact loader origin is not
+    pinned down by the docs either.
+summary:
+  component_count: 1
+  families: [Fibr Script]
+  server_side_sdks: 0
+  registry_packages: 0
+x-evidence:
+  fetched: '2026-08-13'
+  urls:
+    - {url: 'https://support.fibr.ai/get-started-with-fibr-ai/fibr-script.md', status: 200}
+    - {url: 'https://support.fibr.ai/get-started-with-fibr-ai/fibr-script/configure-fibr-script-to-your-website.md', status: 200}
+    - {url: 'https://support.fibr.ai/get-started-with-fibr-ai/compliance-and-permissions/whitelist-fibr-in-your-content-security-policy-csp.md', status: 200}
+    - {url: 'https://registry.npmjs.org/-/v1/search?text=getfibr', status: 200, result: 'no first-party package'}

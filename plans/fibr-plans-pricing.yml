@@ -1,0 +1,95 @@
+generated: '2026-08-13'
+method: searched
+source: https://fibr.ai/pricing
+notes: >-
+  Fibr publishes three named tiers with feature and quota comparisons but NO price on
+  any of them — no amount, no currency, no billing period appears anywhere on the
+  pricing page. Every tier terminates in a sales motion ("Talk to Sales", "Book a
+  Demo", "Explore More"). The quotas below are the only numbers Fibr publishes, and
+  they are recorded verbatim. Prices are therefore null rather than omitted: this is
+  a measured "not published", not a gap in the harvest.
+currency: null
+billing_period: null
+pricing_model: contact-sales
+public_prices: false
+self_serve_signup: false
+free_tier: false
+free_tools_note: >-
+  Fibr does publish a large library of genuinely free, no-login AI marketing tools at
+  https://fibr.ai/tools (headline/hook/CTA/caption/copy generators, CRO audit,
+  landing page analyzer, LLMs.txt generator). These are standalone lead-generation
+  tools, not a plan tier, and carry no published quota — they are not counted as a
+  free tier here.
+plans:
+  - name: Starter
+    slug: starter
+    price: null
+    currency: null
+    billing_period: null
+    audience: >-
+      Growing businesses starting their web optimization and personalization journey.
+    quota:
+      experiences: 1000
+      experiences_note: Up to 1K experiences.
+      visitor_sessions: null
+      domains: null
+    includes:
+      - Full Experimentation Suite
+      - AI-powered hypothesis creation
+      - Automated variant creation
+      - Audience-based experimentation
+      - Statistical significance monitoring
+    support: One-time onboarding, email and chat support
+    overage: null
+    cta: Book a Demo
+    cta_url: https://fibr.ai/book-a-demo
+  - name: Agency
+    slug: agency
+    price: null
+    currency: null
+    billing_period: null
+    audience: Agencies and marketing affiliates optimizing websites for brands.
+    quota:
+      visitor_sessions: 10000
+      visitor_sessions_period: monthly
+      unique_urls: 5
+    includes:
+      - Affiliate Partnership (custom affiliate links, rewards on exceeding targets, rewards on contract renewal)
+      - Agency Program (priority customer support, early access to new features, expert training sessions, assisted pilots)
+      - Early access to Fibr products
+    support: Priority customer support
+    overage: null
+    cta: Explore More
+  - name: Enterprise
+    slug: enterprise
+    price: null
+    currency: null
+    billing_period: null
+    audience: Enterprises personalizing at scale across many domains.
+    quota:
+      experiences: unlimited
+      visitor_sessions: unlimited
+      domains: unlimited
+      unique_urls: unlimited
+    includes:
+      - Web-Journey Personalization
+      - LLM-Traffic Personalization
+      - AI Landing Page Creator (Genesis)
+      - Customized agentic workflows
+      - CDP, CRM and analytics integration
+      - On-brand agent training
+      - White-glove assistance
+    support: >-
+      24x7 dedicated support, dedicated onboarding specialist, dedicated CRO experts,
+      Account Executive, dedicated communication channel, dedicated Customer Success
+      Manager
+    overage: null
+    cta: Talk to Sales
+summary:
+  plan_count: 3
+  priced_plan_count: 0
+  metering_dimensions: [experiences, monthly visitor sessions, unique URLs, domains]
+x-evidence:
+  fetched: '2026-08-13'
+  urls:
+    - {url: 'https://fibr.ai/pricing', status: 200}

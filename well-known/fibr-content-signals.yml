@@ -1,0 +1,63 @@
+generated: '2026-08-13'
+method: probed
+source: https://fibr.ai/robots.txt
+notes: >-
+  Fibr publishes machine-readable AI-consent directives in robots.txt on all three of
+  its public hosts, using the Content Signals vocabulary. This is the only consent /
+  AI-preference signal Fibr serves — there is no /.well-known/ document of any kind
+  (see fibr-well-known.yml) and no security.txt. Note the two vocabularies are NOT the
+  same string set and they disagree with each other: the marketing host declares
+  `ai-training=disallow` while the AI knowledge-base and docs hosts declare
+  `ai-train=yes`. Recorded verbatim rather than reconciled — the divergence is the
+  finding.
+hosts:
+  - host: https://fibr.ai
+    path: /robots.txt
+    status: 200
+    file: fibr-robots.txt
+    served_by: fibr-ai-worker (overrides the Framer auto-generated default)
+    content_signal: 'indexed-content=allow, ai-training=disallow, ai-search=allow'
+    directives:
+      indexed-content: allow
+      ai-training: disallow
+      ai-search: allow
+    named_ai_agents_allowed: [GPTBot, ClaudeBot, PerplexityBot, Google-Extended]
+    sitemaps:
+      - https://fibr.ai/sitemap.xml
+      - https://ai.fibr.ai/sitemap-ai.xml
+    note: >-
+      Also carries an explicit AI-bot discovery comment block pointing at
+      https://ai.fibr.ai/llms.txt and https://ai.fibr.ai/llms-full.txt.
+  - host: https://ai.fibr.ai
+    path: /robots.txt
+    status: 200
+    file: fibr-ai-robots.txt
+    content_signal: 'ai-train=yes, search=yes, ai-input=yes'
+    directives:
+      ai-train: 'yes'
+      search: 'yes'
+      ai-input: 'yes'
+    sitemaps:
+      - https://ai.fibr.ai/sitemap-ai.xml
+  - host: https://support.fibr.ai
+    path: /robots.txt
+    status: 200
+    file: fibr-support-robots.txt
+    served_by: GitBook
+    content_signal: 'ai-train=yes, search=yes, ai-input=yes'
+    directives:
+      ai-train: 'yes'
+      search: 'yes'
+      ai-input: 'yes'
+    sitemaps:
+      - https://support.fibr.ai/sitemap.xml
+related_artifacts:
+  - llms/fibr-llms.txt
+  - llms/fibr-support-llms.txt
+  - well-known/fibr-well-known.yml
+x-evidence:
+  fetched: '2026-08-13'
+  urls:
+    - {url: 'https://fibr.ai/robots.txt', status: 200, content_type: text/plain}
+    - {url: 'https://ai.fibr.ai/robots.txt', status: 200, content_type: text/plain}
+    - {url: 'https://support.fibr.ai/robots.txt', status: 200, content_type: text/plain}

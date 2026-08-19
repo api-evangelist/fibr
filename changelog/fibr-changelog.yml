@@ -1,0 +1,117 @@
+generated: '2026-08-13'
+method: searched
+source: https://support.fibr.ai/product-change-logs
+docs:
+  product_change_logs: https://support.fibr.ai/product-change-logs
+  whats_new: https://support.fibr.ai/whats-new
+notes: >-
+  Fibr publishes TWO dated release surfaces in its GitBook documentation: "Product
+  Change Logs" (problem / impact / update writeups for platform changes) and "What's
+  New" (feature announcements). Both are dated per entry and are available as
+  machine-readable markdown by appending .md to the URL. There is no API changelog,
+  because Fibr publishes no public API — these track the product UI and its
+  integrations. No version numbers are attached to entries and no breaking-change
+  notation is used; the scheme is continuous SaaS delivery, dated only.
+scheme: continuous-dated
+versioned: false
+current_version: null
+breaking_change_policy: null
+machine_readable:
+  markdown: true
+  pattern: append .md to any documentation URL
+  index: https://support.fibr.ai/llms.txt
+entries:
+  - date: '2026-02-01'
+    source: whats-new
+    title: Ads Journey Personalization
+    kind: addition
+    highlights: >-
+      Personalized web experiences for paid visitors based on the multi-page user
+      journey.
+  - date: '2026-01-19'
+    source: product-change-logs
+    title: Activity Log in Preview Mode
+    kind: addition
+    highlights: >-
+      Real-time preview and activity logging that replicates production website
+      behavior so changes, experiences and tracking events can be verified before
+      publishing.
+  - date: '2026-01-14'
+    source: product-change-logs
+    title: Change-log Feature in Fibr Editor
+    kind: addition
+    highlights: >-
+      Surfaces draft and saved changes per variant and flags cross-viewport
+      (web/mobile) conflicts in real time before deployment.
+  - date: '2026-01-08'
+    source: whats-new
+    title: Fibr Genesis (beta)
+    kind: addition
+    highlights: Prompt-and-brand-guideline driven landing page creation. Beta release.
+  - date: '2026-01-05'
+    source: whats-new
+    title: Advanced Audience Personalization
+    kind: addition
+    highlights: Audience-segment insights plus suggestion-driven personalized experiences.
+  - date: '2025-12-08'
+    source: whats-new
+    title: LLM-Traffic Personalization
+    kind: addition
+    highlights: >-
+      Personalization targeted at intent-driven traffic referred by LLM products.
+  - date: '2025-12-05'
+    source: product-change-logs
+    title: New Ad Integration Flow
+    kind: change
+    highlights: >-
+      Google Ads and Meta Ads connections no longer auto-sync every campaign; the
+      user selects which campaigns sync to the Fibr dashboard at connect time and on
+      re-sync.
+  - date: '2025-11-12'
+    source: product-change-logs
+    title: Element Selection in Ad Personalization
+    kind: change
+    highlights: >-
+      Element selection redesigned so Text, Image, Style and Pop-up personalization
+      types each show proposed per-element changes in a simplified view.
+  - date: '2025-11-10'
+    source: whats-new
+    title: Location Personalization
+    kind: addition
+    highlights: Location segments with tailored suggestions and per-location experiences.
+  - date: '2025-10-24'
+    source: product-change-logs
+    title: Dashboard Restructuring
+    kind: change
+    highlights: >-
+      Navigation reorganized into four sections — Experimentation, Personalization,
+      Generative Engine Optimization (GEO) and Analytics.
+  - date: '2025-10-20'
+    source: whats-new
+    title: LLM Presence Report
+    kind: addition
+    highlights: >-
+      Brand-versus-competitor performance across ChatGPT, Claude, Gemini, Perplexity
+      and Grok.
+  - date: '2025-10-20'
+    source: whats-new
+    title: LLM Traffic Report
+    kind: addition
+  - date: '2025-08-12'
+    source: whats-new
+    title: Agentic Ad Personalization
+    kind: addition
+  - date: '2025-07-23'
+    source: whats-new
+    title: Fibr Pulse
+    kind: addition
+summary:
+  entry_count: 14
+  window: '2025-07-23 to 2026-02-01'
+  most_recent: '2026-02-01'
+  breaking_entries: 0
+x-evidence:
+  fetched: '2026-08-13'
+  urls:
+    - {url: 'https://support.fibr.ai/product-change-logs.md', status: 200}
+    - {url: 'https://support.fibr.ai/whats-new.md', status: 200}

@@ -1,0 +1,103 @@
+generated: '2026-08-13'
+method: searched
+source: https://support.fibr.ai/llms.txt
+notes: >-
+  Listing-only. Fibr documents these integrations in its GitBook, but every one of
+  them is configured through the Fibr dashboard UI (OAuth account connect, tag
+  placement or URL parameters) — Fibr publishes no API and no operationIds, so there
+  is nothing to bind an Arazzo workflow to on the Fibr side. Per the pipeline's
+  no-fabrication rule these stay as listing entries with `arazzo: null` and
+  `status: pending-partner-spec` rather than invented workflows.
+integrations:
+  - slug: google-ads
+    label: Google Ads
+    partner: google
+    category: advertising
+    use_case: >-
+      Connect a Google Ads account so campaigns sync to the Fibr dashboard and each
+      ad can drive a matched, personalized landing page.
+    mechanism: account-connect + tracking parameters on each ad
+    docs:
+      - https://support.fibr.ai/integrations/integrate-google-ads
+      - https://support.fibr.ai/integrations/integrate-google-ads/how-to-set-tracking-parameters-on-google-ads
+      - https://support.fibr.ai/integrations/integrate-google-ads/how-to-sync-new-or-updated-ad-campaigns-in-fibr
+    arazzo: null
+    status: pending-partner-spec
+  - slug: meta-ads
+    label: Meta Ads
+    partner: meta
+    category: advertising
+    use_case: >-
+      Connect a Meta Ads account so campaigns sync to Fibr and each ad maps to a
+      personalized landing page variant.
+    mechanism: account-connect + URL parameters on each ad
+    docs:
+      - https://support.fibr.ai/integrations/integrate-meta-ads
+      - https://support.fibr.ai/integrations/integrate-meta-ads/how-to-set-url-parameters-on-meta-ads
+      - https://support.fibr.ai/integrations/integrate-meta-ads/how-to-sync-new-or-updated-ad-campaigns-in-fibr
+    arazzo: null
+    status: pending-partner-spec
+  - slug: google-analytics-ga4
+    label: Google Analytics (GA4)
+    partner: google
+    category: analytics
+    use_case: Pull GA4 performance data into Fibr to measure campaigns and experiments.
+    mechanism: account-connect
+    docs:
+      - https://support.fibr.ai/integrations/integrate-google-analytics-ga4
+    arazzo: null
+    status: pending-partner-spec
+  - slug: google-tag-manager
+    label: Google Tag Manager
+    partner: google
+    category: tag-management
+    use_case: >-
+      Track and push conversion events from Fibr into analytics and marketing
+      platforms; can also carry the Fibr Script, though the docs discourage that
+      path because of added delay and flicker.
+    mechanism: container tag
+    docs:
+      - https://support.fibr.ai/integrations/integrate-google-tag-manager
+      - https://support.fibr.ai/tracking-and-analytics/success-metric-in-fibr-campaigns/how-do-the-gtm-metrics-work-on-fibr
+      - https://support.fibr.ai/get-started-with-fibr-ai/fibr-script/impact-of-fibr-script-using-gtm
+    arazzo: null
+    status: pending-partner-spec
+  - slug: shopify
+    label: Shopify
+    partner: shopify
+    category: ecommerce
+    use_case: >-
+      Install the Fibr Script across a Shopify storefront so every page can run
+      experiments and personalization.
+    mechanism: >-
+      Shopify app install; Fibr requests read access to store data and permission to
+      inject the optimization script (docs state no access to customer payment
+      information and no product modification).
+    docs:
+      - https://support.fibr.ai/get-started-with-fibr-ai/fibr-script/configuring-the-fibr-script-for-your-shopify-store
+    arazzo: null
+    status: pending-partner-spec
+  - slug: cdp
+    label: CDP (customer data platform)
+    partner: null
+    category: customer-data
+    use_case: >-
+      Drive account/segment personalization at scale from CDP audience data.
+    mechanism: dashboard-configured; no specific CDP vendor named in public docs
+    docs:
+      - https://fibr.ai/personalization-at-scale-cdp
+    arazzo: null
+    status: pending-partner-spec
+    note: >-
+      The pricing page lists "Integrate CDP, CRM & Analytics" as an Enterprise-tier
+      capability but names no vendor and publishes no setup documentation, so this
+      entry records the claim, not a verified connector.
+summary:
+  integration_count: 6
+  with_arazzo: 0
+  listing_only: 6
+x-evidence:
+  fetched: '2026-08-13'
+  urls:
+    - {url: 'https://support.fibr.ai/llms.txt', status: 200}
+    - {url: 'https://support.fibr.ai/integrations/integrate-google-ads.md', status: 200}

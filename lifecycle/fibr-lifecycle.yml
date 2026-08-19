@@ -1,0 +1,63 @@
+generated: '2026-08-13'
+method: searched
+source: https://support.fibr.ai/product-change-logs
+notes: >-
+  Fibr publishes no public API, so there is no API version scheme, no deprecation
+  policy and no Sunset/Deprecation header behavior to record. What Fibr DOES operate
+  is a dated product release cadence (two documented surfaces, ~14 entries over
+  thirteen months) and a documented data-residency/tenant-control posture. The
+  absences below were each probed, not assumed: no status page host resolves, and
+  neither the docs index nor the trust center links an SLA or uptime commitment.
+versioning:
+  scheme: continuous-dated
+  current: null
+  docs: https://support.fibr.ai/product-change-logs
+  note: >-
+    Product releases are dated, never numbered. No semantic version, no API version
+    path or header exists because there is no public API.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  deprecation_header: false
+  note: >-
+    No deprecation or end-of-life policy is published. The changelog does record
+    behavior CHANGES to existing flows (e.g. the 2025-12-05 ad-integration change
+    that stopped auto-syncing every campaign) but with no notice window, no
+    migration path and no deprecation label attached.
+sla:
+  url: null
+  uptime_target: null
+  note: No SLA or uptime commitment is published on the site, docs or trust center.
+status_page: null
+status_page_probe:
+  probes:
+    - {url: 'https://status.fibr.ai/', result: DNS does not resolve}
+    - {url: 'https://status.getfibr.co/', result: DNS does not resolve}
+    - {url: 'https://fibr.statuspage.io/', status: 200, result: 'redirects to the Statuspage/Google admin sign-in — an unclaimed subdomain, NOT a published status page'}
+  note: >-
+    No status page pointer is wired in apis.yml. fibr.statuspage.io answers 200 but
+    resolves to manage.statuspage.io's login flow, which is the classic soft-200
+    false positive; it carries no incident history for Fibr.
+support:
+  channels:
+    - {kind: documentation, url: 'https://support.fibr.ai/'}
+    - {kind: email-and-chat, note: 'Documented as included from the Starter tier upward'}
+    - {kind: dedicated-channel, note: 'Enterprise tier only — named CSM, AE and 24x7 dedicated support'}
+release_surfaces:
+  - {name: Product Change Logs, url: 'https://support.fibr.ai/product-change-logs', entries: 5, window: '2025-10-24 to 2026-01-19'}
+  - {name: What's New, url: 'https://support.fibr.ai/whats-new', entries: 9, window: '2025-07-23 to 2026-02-01'}
+governance_docs:
+  - {name: Data Residency, Privacy & Trust, url: 'https://support.fibr.ai/get-started-with-fibr-ai/compliance-and-permissions/data-residency-privacy-and-trust'}
+  - {name: Role-Based Access & Tenant Controls, url: 'https://support.fibr.ai/get-started-with-fibr-ai/compliance-and-permissions/role-based-access-and-tenant-controls'}
+  - {name: Trust center, url: 'https://trust.fibr.ai/'}
+deprecated_operations: []
+related_artifacts:
+  - changelog/fibr-changelog.yml
+  - security/fibr-trust-center.yml
+  - conformance/fibr-conformance.yml
+x-evidence:
+  fetched: '2026-08-13'
+  urls:
+    - {url: 'https://support.fibr.ai/product-change-logs.md', status: 200}
+    - {url: 'https://support.fibr.ai/whats-new.md', status: 200}
+    - {url: 'https://fibr.statuspage.io/', status: 200, note: 'soft-200, admin login redirect'}

@@ -1,0 +1,60 @@
+# Fibr Support
+
+## 2026 Support Structure
+
+- [Fibr Docs](https://support.fibr.ai/fibr-docs.md): Get an overview of Fibr's features, integrations, and how to use them to personalize web experiences, run experiments, and optimize conversions at scale.
+- [What's New](https://support.fibr.ai/whats-new.md): We're constantly evolving with new features and enhancements to help you optimize and scale your web experiences using AI.
+- [Product Change Logs](https://support.fibr.ai/product-change-logs.md): Stay up to date with the latest improvements, and enhancements to the Fibr.ai platform to make it more intuitive.
+- [What is Fibr?](https://support.fibr.ai/fibr-ai/what-is-fibr.md)
+- [What products does Fibr offer?](https://support.fibr.ai/fibr-ai/what-products-does-fibr-offer.md): Fibr brings together four core products that work as one intelligent experience layer designed for enterprise scale, security, and collaboration.
+- [Sign Up & Login](https://support.fibr.ai/get-started-with-fibr-ai/sign-up-and-login.md)
+- [Inviting Your Team](https://support.fibr.ai/get-started-with-fibr-ai/inviting-your-team.md): Easily invite teammates to your Fibr workspace, assign roles like Admin or Member, and collaborate seamlessly across campaigns and experiments.
+- [Fibr Script](https://support.fibr.ai/get-started-with-fibr-ai/fibr-script.md)
+- [Configure Fibr Script to your website](https://support.fibr.ai/get-started-with-fibr-ai/fibr-script/configure-fibr-script-to-your-website.md): Set up the Fibr script on your website to enable personalization, track user behavior, and run seamless experiments using Fibr AI.
+- [Configuring the Fibr Script for your Shopify Store](https://support.fibr.ai/get-started-with-fibr-ai/fibr-script/configuring-the-fibr-script-for-your-shopify-store.md): Integrate the Fibr script with Shopify to enable personalization and experimentation on your Shopify-powered website. Step-by-step setup included.
+- [Impact of Fibr Script on Web Performance](https://support.fibr.ai/get-started-with-fibr-ai/fibr-script/impact-of-fibr-script-on-web-performance.md): See how the Fibr Script performs across FCP, LCP, and Total Blocking Time, designed to ensure minimal impact on your website performance.
+- [Impact of Fibr Script using GTM](https://support.fibr.ai/get-started-with-fibr-ai/fibr-script/impact-of-fibr-script-using-gtm.md): See how the Fibr Script performs across key metrics like FCP, LCP, and Total Blocking Time if placed using Google Tag Manager.
+- [Compliance & Permissions](https://support.fibr.ai/get-started-with-fibr-ai/compliance-and-permissions.md): Find answers to frequently asked questions about Fibr’s features, setup, billing, troubleshooting, and more—all in one convenient place.
+- [Whitelist Fibr in Your Content Security Policy (CSP)](https://support.fibr.ai/get-started-with-fibr-ai/compliance-and-permissions/whitelist-fibr-in-your-content-security-policy-csp.md): Learn how to whitelist Fibr in your Content Security Policy to ensure smooth script execution, personalization, and tracking without triggering security errors
+- [Role-Based Access & Tenant Controls](https://support.fibr.ai/get-started-with-fibr-ai/compliance-and-permissions/role-based-access-and-tenant-controls.md)
+- [Data Residency, Privacy & Trust](https://support.fibr.ai/get-started-with-fibr-ai/compliance-and-permissions/data-residency-privacy-and-trust.md)
+- [Can You Run Fibr on Your Local Machine?](https://support.fibr.ai/get-started-with-fibr-ai/compliance-and-permissions/can-you-run-fibr-on-your-local-machine.md): Learn how to run the Fibr script on your local machine for testing and preview purposes, even though live campaigns won’t be active in this environment.
+- [Integrate Google Tag Manager](https://support.fibr.ai/integrations/integrate-google-tag-manager.md): Learn how to integrate Google Tag Manager with Fibr to track and push conversion events from Fibr to your analytics and marketing platforms quickly and easily.
+- [Integrate Google Analytics (GA4)](https://support.fibr.ai/integrations/integrate-google-analytics-ga4.md)
+- [Integrate Google Ads](https://support.fibr.ai/integrations/integrate-google-ads.md): Learn how to connect your Google Ads account to Fibr to sync all ads with the dashboard and start personalizing landing pages for each campaign.
+- [How to set tracking parameters on Google Ads?](https://support.fibr.ai/integrations/integrate-google-ads/how-to-set-tracking-parameters-on-google-ads.md): Fibr synchronizes your Google Ads using the tracking parameters defined in each ad. If these parameters are missing or incorrectly configured, the ads cannot be used for personalization within Fibr.
+- [How to Sync New or Updated Ad Campaigns in Fibr](https://support.fibr.ai/integrations/integrate-google-ads/how-to-sync-new-or-updated-ad-campaigns-in-fibr.md): Whenever new ads are created or existing ads are updated, they must be synced with Fibr to ensure accurate tracking and personalization.
+- [Integrate Meta Ads](https://support.fibr.ai/integrations/integrate-meta-ads.md): This guide will help you connect your Meta Ads account to sync all ads with the Fibr dashboard and start personalizing landing pages for each of them.
+- [How to set URL Parameters on Meta Ads?](https://support.fibr.ai/integrations/integrate-meta-ads/how-to-set-url-parameters-on-meta-ads.md): Fibr syncs Meta Ads via URL parameters in each ad. Missing or incorrect parameters will prevent those ads from being used for personalization within Fibr.
+- [How to Sync New or Updated Ad Campaigns in Fibr](https://support.fibr.ai/integrations/integrate-meta-ads/how-to-sync-new-or-updated-ad-campaigns-in-fibr.md): Whenever new ads are created or existing ads are updated, they must be synced with Fibr to ensure accurate tracking and personalization.
+- [Overview](https://support.fibr.ai/fibr-editor/overview.md)
+- [Key features of Fibr Editor](https://support.fibr.ai/fibr-editor/key-features-of-fibr-editor.md)
+- [Limitations of Fibr Editor](https://support.fibr.ai/fibr-editor/limitations-of-fibr-editor.md)
+- [Overview](https://support.fibr.ai/hypothesis-and-experimentation/overview.md)
+- [Key Concepts](https://support.fibr.ai/hypothesis-and-experimentation/overview/key-concepts.md)
+- [How to launch new experiments on Fibr AI?](https://support.fibr.ai/hypothesis-and-experimentation/how-to-launch-new-experiments-on-fibr-ai.md): Fibr automatically generates hypotheses by analyzing page performance and visitor behavior, then converts them into experiments and tests them at scale.
+- [Overview](https://support.fibr.ai/fibr-personalization-suite/overview.md)
+- [Ads Personalization](https://support.fibr.ai/fibr-personalization-suite/ads-personalization.md)
+- [How to Set Up an Ad Personalization Campaign?](https://support.fibr.ai/fibr-personalization-suite/ads-personalization/how-to-set-up-an-ad-personalization-campaign.md): Learn how to create an Ad Personalization campaign in Fibr, from selecting ads and keywords to editing content and tracking success events for every visitor.
+- [How to set up journey personalization for Ads?](https://support.fibr.ai/fibr-personalization-suite/ads-personalization/how-to-set-up-journey-personalization-for-ads.md): Learn how to personalize user journey for a paid visitor coming from your Google and Meta Ads with the help of Fibr AI
+- [LLM based Personalization](https://support.fibr.ai/fibr-personalization-suite/llm-based-personalization.md): Personalize landing pages in Fibr based on ad campaigns so visitors see content tailored to the specific ad they clicked on for a seamless, relevant experience.
+- [How to Set Up a LLM Based Personalization Campaign?](https://support.fibr.ai/fibr-personalization-suite/llm-based-personalization/how-to-set-up-a-llm-based-personalization-campaign.md): Learn how to create an Ad Personalization campaign in Fibr, from selecting ads and keywords to editing content and tracking success events for every visitor.
+- [Audience Personalization](https://support.fibr.ai/fibr-personalization-suite/audience-personalization.md): Discover how to personalize your website in Fibr using audience attributes like location, behavior, and device type to boost engagement and conversions.
+- [Defining Audience Segments for Audience Personalization](https://support.fibr.ai/fibr-personalization-suite/audience-personalization/defining-audience-segments-for-audience-personalization.md): Learn how to define your target audience in Fibr using UTM parameters, visitor behavior, and device type to create tailored experiences for specific segments.
+- [How to set up an audience Personalization Campaign?](https://support.fibr.ai/fibr-personalization-suite/audience-personalization/how-to-set-up-an-audience-personalization-campaign.md): Fibr Audience Personalization lets you create segments and personalize web experiences based on visitor behavior, device, and location without any code.
+- [Location based Personalization](https://support.fibr.ai/fibr-personalization-suite/location-based-personalization.md): Learn how to personalize landing pages in Fibr based on ad campaigns so visitors see content matched to the specific ad they clicked on for better conversions.
+- [How to Set Up a Location-Based Personalization Campaign](https://support.fibr.ai/fibr-personalization-suite/location-based-personalization/how-to-set-up-a-location-based-personalization-campaign.md): Learn how to create an Location Personalization campaign in Fibr from defining your location segments to personalizing web experience for every location segment.
+- [Limitations of Location Personalization](https://support.fibr.ai/fibr-personalization-suite/location-based-personalization/limitations-of-location-personalization.md)
+- [LLM Traffic Report](https://support.fibr.ai/fibr-tools/llm-traffic-report.md)
+- [How to Generate LLM Traffic Report?](https://support.fibr.ai/fibr-tools/llm-traffic-report/how-to-generate-llm-traffic-report.md)
+- [LLM Presence Report](https://support.fibr.ai/fibr-tools/llm-presence-report.md)
+- [How to Generate LLM presence Report?](https://support.fibr.ai/fibr-tools/llm-presence-report/how-to-generate-llm-presence-report.md)
+- [Fibr Pulse(Insights)](https://support.fibr.ai/fibr-tools/fibr-pulse-insights.md)
+- [How to use Fibr Pulse?](https://support.fibr.ai/fibr-tools/fibr-pulse-insights/how-to-use-fibr-pulse.md)
+- [Success Metric in Fibr Campaigns](https://support.fibr.ai/tracking-and-analytics/success-metric-in-fibr-campaigns.md)
+- [How to add Click Tracking on a page?](https://support.fibr.ai/tracking-and-analytics/success-metric-in-fibr-campaigns/how-to-add-click-tracking-on-a-page.md)
+- [How to add Page Tracking on a Page?](https://support.fibr.ai/tracking-and-analytics/success-metric-in-fibr-campaigns/how-to-add-page-tracking-on-a-page.md)
+- [How do the GTM metrics work on Fibr?](https://support.fibr.ai/tracking-and-analytics/success-metric-in-fibr-campaigns/how-do-the-gtm-metrics-work-on-fibr.md): GTM Metrics makes it simple for you to use existing metrics to track personalization performance on Fibr.
+- [Analytics Dashboard](https://support.fibr.ai/tracking-and-analytics/analytics-dashboard.md): Learn how to navigate Fibr's Analytics Dashboard to track performance, analyze key metrics, and gain actionable insights to optimize campaigns and conversions.
+- [Understanding Fibr Analytics Dashboard](https://support.fibr.ai/tracking-and-analytics/analytics-dashboard/understanding-fibr-analytics-dashboard.md)
+- [How to access analytics of a campaign?](https://support.fibr.ai/tracking-and-analytics/analytics-dashboard/how-to-access-analytics-of-a-campaign.md)
