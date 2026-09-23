@@ -1,0 +1,30 @@
+# Front Door AI Index — fibr — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: fibr
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: fibr.ai
+  final_host: fibr.ai
+  ownership: own
+  owner: fibr
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 83
+  host_score: 83
+  density: 38.28
+  words: 2168
+  tiers:
+    agentic: 23
+    core: 60
+    model: 0
+  ambiguous: 17
+  top_terms:
+    AI: 55
+    agentic: 15
+    agent: 13
+    AI agent: 8
+    LLMs: 5
+    intelligence: 4
