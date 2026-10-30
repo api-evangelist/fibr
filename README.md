@@ -64,6 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Fibr is a company surfaced as a portfolio company of accel and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Fibr AI is an Agentic Web Experience Platform that turns static URLs into intelligent, adaptive landing pages that sense visitor intent and reshape themselves in real time using AI agents with human oversight. Its core product, Fibr Web Pilot, combines no-code A/B testing, conversion-rate optimization (CRO), and personalization — including ad-to-landing-page matching, audience and LLM-visitor personalization, bulk page creation, and AI-driven experimentation — for enterprises, agencies, and growth marketers. The platform integrates with Google Ads, Meta Ads, GA4, CDPs, and major CMS tools, and also ships a large library of free AI marketing tools (headline, hook, CTA, caption, and copy generators, a CRO audit, a landing-page analyzer, and an LLMs.txt generator). Founded in 2022-2023 by Ankur "AJ" Goyal and Pritam Roy and backed by Accel, Fibr is offered through Starter, Agency, and Enterprise pricing tiers. Fibr does not currently publish a public developer API or OpenAPI; this profile captures its identity, developer-adjacent surface, and security/compliance posture.
 
-Backed by: accel — https://fibr.ai/
+**Areas:** Company · Conversion Rate Optimization · Personalization · Landing Pages · A/B Testing · Experimentation · Marketing · Artificial Intelligence · Agentic Web · Web Experience
+
+## Fibr on APIs.io
+
+Everything profiled for Fibr is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/fibr/](https://apis.io/providers/fibr/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Fibr Domain Security](https://apis.io/security/fibr/fibr-domain-security/)
+- [Fibr Trust Center](https://apis.io/security/fibr/fibr-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Fibr Plans Pricing](https://apis.io/plans/fibr/fibr-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://fibr.ai/)
+- [Documentation](https://support.fibr.ai/)
+- [Getting started](https://support.fibr.ai/get-started-with-fibr-ai)
+- [Pricing](https://fibr.ai/pricing)
+- [Sign up](https://fibr.ai/book-a-demo)
+- [Support](https://support.fibr.ai/)
+- [Changelog](https://support.fibr.ai/product-change-logs)
+- [Blog](https://fibr.ai/blog)
+- [Compliance](https://trust.fibr.ai/)
+- [Trust centre](https://trust.fibr.ai/)
+- [Terms of service](https://fibr.ai/terms-and-conditions)
+- [Privacy policy](https://fibr.ai/privacy-policy)
+- [GitHub](https://github.com/getfibr-co)
+
+## API Evangelist rating
+
+**Kin Score 35.3** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 92.1 |
+
+**Agent readiness 2.2** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | yes |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 21.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/fibr/](https://apis.io/providers/fibr/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Fibr: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/fibr/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
